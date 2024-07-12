@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora AC4 1.0</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="calculator">
+            <h1>CALCULADORA AC4 - GOIÁS - 2024</h1>
+            <fieldset>
+                <legend class="azul">ESCALA AZUL</legend>
+                <label>
+                    <input type="checkbox" id="option1"> ESCALA DIURNA AZUL (de 05h01 às 21h59)
+                    <input type="number" id="quantity1" min="1" value="1">
+                </label>
+                <label>
+                    <input type="checkbox" id="option2"> ESCALA NOTURNA AZUL (de 22h00 às 05h00)
+                    <input type="number" id="quantity2" min="1" value="1">
+                </label>
+                <label>
+                    <input type="checkbox" id="option3"> DIÁRIA COMPLETA ESCALA AZUL (24h)
+                    <input type="number" id="quantity3" min="1" value="1">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend class="vermelha">ESCALA VERMELHA</legend>
+                <label>
+                    <input type="checkbox" id="option4"> ESCALA DIURNA VERMELHA (de 05h01 às 21h59)
+                    <input type="number" id="quantity4" min="1" value="1">
+                </label>
+                <label>
+                    <input type="checkbox" id="option5"> ESCALA NOTURNA VERMELHA (de 22h00 às 05h00)
+                    <input type="number" id="quantity5" min="1" value="1">
+                </label>
+                <label>
+                    <input type="checkbox" id="option6"> DIÁRIA COMPLETA ESCALA VERMELHA (24h)
+                    <input type="number" id="quantity6" min="1" value="1">
+                </label>
+            </fieldset>
+            <button onclick="calculate()">Calcular Total</button>
+            <p id="result"></p>
+        </div>
+        <div class="instructions">
+            <h2>Instruções</h2>
+            <ol>
+                <li>Selecione as escalas desejadas marcando as opções.</li>
+                <li>Indique a quantidade de vezes que cada escala foi tirada nos campos numéricos.</li>
+                <li>Clique em "Calcular Total" para obter o valor total dos extras.</li>
+            </ol>
+            <p>Para mais informações, consulte a PORTARIA Nº 0550, DE 29 DE MAIO DE 2024 da Secretaria de Estado de Segurança Pública do Estado de Goiás.</p>
+            <ol>
+                <li class="art">Art. 2º Estabelecer que os valores e horários sejam regulamentados com diferenciação de escala conforme se segue:
+                    <br> 
+                    I - Consideram-se os seguintes horários para a ESCALA AZUL:
+                    <br> 
+                    a- Período Diurno (de 05h01 às 21h59): de segunda-feira a quinta-feira, no valor de R$ 26,47 (vinte e seis reais e quarenta e sete centavos); e
+                    <br> 
+                    b- Período Noturno (de 22h às 5h): de segunda-feira a quinta-feira, no valor de R$ 29,80 (vinte e nove reais e oitenta centavos).
+                    <br> 
+                    II - Consideram-se os seguintes horários para a ESCALA VERMELHA:
+                    <br> 
+                    c- Período Diurno (de 05h01 às 21h59): de sexta-feira a domingo, no valor de R$ 36,41 (trinta e seis reais e quarenta e um centavos); e
+                    <br> 
+                    d- Período Noturno (de 22h às 5h): de sexta-feira a domingo, no valor de R$ 41,38 (quarenta e um reais e trinta e oito centavos).
+                    <br> 
+                    </li>
+            </ol>
+        </div>
+    </div>
+    <footer>
+        <p>Os dados para os cálculos dos extras (AC4) seguem as atualizações da PORTARIA Nº 0550, 
+            DE 29 DE MAIO DE 2024, da Secretaria de Estado de Segurança Pública do Estado de Goiás.
+            <br>
+            Criado por Leonan Ambrosio Silva.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
